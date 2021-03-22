@@ -1,4 +1,4 @@
-package com.leidos.demo;
+package com.leidos.login.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

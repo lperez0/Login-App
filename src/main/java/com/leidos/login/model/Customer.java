@@ -1,0 +1,26 @@
+package com.leidos.login.model;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import javax.persistence.*;
+
+@Entity
+@Table
+@Getter
+@Setter
+@NoArgsConstructor
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long customerId;
+
+    @Column
+    private String ipAddress;
+
+    @Column
+    private String alias;
+
+
+}

@@ -1,4 +1,13 @@
 spring:
+  datasource:
+    url: jdbc:h2:mem:tempdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: pass
+    database-platform: org.hibernate.dialet.H2Dialet
+  h2:
+    console:
+      enabled: true
   thymeleaf:
     cache: false
   security:
@@ -12,3 +21,4 @@ spring:
 logging:
   level:
     root: INFO
+

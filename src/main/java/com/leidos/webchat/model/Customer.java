@@ -1,4 +1,4 @@
-package com.leidos.login.model;
+package com.leidos.webchat.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

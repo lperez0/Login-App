@@ -1,10 +1,10 @@
-package com.leidos.login;
+package com.leidos.webchat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LoginApplicationTests {
+class WebChatApplicationTests {
 
     @Test
     void contextLoads() {

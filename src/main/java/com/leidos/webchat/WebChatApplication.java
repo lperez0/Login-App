@@ -1,4 +1,4 @@
-package com.leidos.login;
+package com.leidos.webchat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories
-public class LoginApplication extends SpringBootServletInitializer {
+public class WebChatApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-        SpringApplication.run(LoginApplication.class, args);
+        SpringApplication.run(WebChatApplication.class, args);
     }
 
 }

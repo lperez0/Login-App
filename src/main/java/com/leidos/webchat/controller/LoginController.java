@@ -1,4 +1,4 @@
-package com.leidos.login.controller;
+package com.leidos.webchat.controller;
 
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;

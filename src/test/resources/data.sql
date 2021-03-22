@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS customer;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS user_role;
+DROP TABLE IF EXISTS agent_role;
+DROP TABLE IF EXISTS agent;
 DROP TABLE IF EXISTS role;
 
 CREATE TABLE customer (
@@ -9,9 +9,9 @@ CREATE TABLE customer (
     alias VARCHAR(250)
 );
 
-CREATE TABLE users (
-    user_id int PRIMARY KEY,
-    user_name VARCHAR(250),
+CREATE TABLE agent (
+    agent_id int PRIMARY KEY,
+    agent_name VARCHAR(250),
     first_name VARCHAR(250),
     last_name VARCHAR(250)
 );
@@ -21,10 +21,10 @@ CREATE TABLE role (
     role_desc VARCHAR(250) NOT NULL
 );
 
-CREATE TABLE user_role (
-    user_id int ,
+CREATE TABLE agent_role (
+    agent_id int,
     role_id int,
-    FOREIGN KEY (user_id) REFERENCES users (user_id),
+    FOREIGN KEY (agent_id) REFERENCES agent (agent_id),
     FOREIGN KEY (role_id) REFERENCES role (role_id)
 );
 
